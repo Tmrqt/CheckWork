@@ -4,11 +4,10 @@ int SIZE = Convert.ToInt32(Console.ReadLine());
 string[] NewArr (int SIZE)
 {
     string[] arr = new string[SIZE];
-    Random rand = new Random();
     for (int i = 0; i < arr.Length; i++)
     {
-        arr[i] = ((char)rand.Next('a', 'z' + 1)).ToString();
-    
+        System.Console.WriteLine("Введите строку массива: ");
+        arr[i] = Console.ReadLine();
     }
     return arr;
 }
