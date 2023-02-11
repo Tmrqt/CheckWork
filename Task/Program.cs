@@ -15,10 +15,16 @@ string[] NewArr (int SIZE)
 
 void ShowArr (string[] arr)
 {
-    for (int i = 0; i < arr.Length; i++)
-    {
-        System.Console.WriteLine(arr[i]);
-    }
+	if(arr.Length == 0)
+		{
+			Console.WriteLine("Array is empty");
+		}
+		else
+		{
+            System.Console.WriteLine("Результат: ");
+			Array.ForEach(arr, (str) => Console.Write($"{str} "));
+			Console.WriteLine();
+		}
 }
 
 string[] Arr = NewArr(SIZE);
