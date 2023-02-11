@@ -27,7 +27,8 @@ string[] Arr = NewArr(SIZE);
 string[] ResArr (string[] arr)
 {
     int count = 0;
-    string[] ResArr = new string[count];
+    int length = arr.Length;
+    string[] ResArr = new string[length];
     for (int i = 0; i < arr.Length; i++)
     {
         if (arr[i].Length <= LIMIT)
