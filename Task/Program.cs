@@ -27,24 +27,23 @@ void ShowArr (string[] arr)
 		}
 }
 
-string[] Arr = NewArr(SIZE);
-//ShowArr(Arr);
-
-string[] ResArr (string[] arr)
+string[] ResArr (string[] Arr)
 {
     int count = 0;
-    int length = arr.Length;
+    int length = Arr.Length;
     string[] ResArr = new string[length];
-    for (int i = 0; i < arr.Length; i++)
+    for (int i = 0; i < Arr.Length; i++)
     {
-        if (arr[i].Length <= LIMIT)
+        if (Arr[i].Length <= LIMIT)
         {
-            ResArr[count] = arr[i];
+            ResArr[count] = Arr[i];
             count++;
         }
     }
     return ResArr;
 }
 
+string[] Arr = NewArr(SIZE);
+//ShowArr(Arr);
 string[] arr = ResArr(Arr);
 ShowArr(arr);
