@@ -1,5 +1,6 @@
 ﻿Console.WriteLine("Введите размер массива: ");
 int SIZE = Convert.ToInt32(Console.ReadLine());
+int LIMIT = 3;
 
 string[] NewArr (int SIZE)
 {
@@ -22,3 +23,21 @@ void ShowArr (string[] arr)
 
 string[] Arr = NewArr(SIZE);
 ShowArr(Arr);
+
+string[] ResArr (string[] arr)
+{
+    int count = 0;
+    string[] ResArr = new string[count];
+    for (int i = 0; i < arr.Length; i++)
+    {
+        if (arr[i].Length <= LIMIT)
+        {
+            ResArr[count] = arr[i];
+            count++;
+        }
+    }
+    return ResArr;
+}
+
+string[] arr = ResArr(Arr);
+ShowArr(arr);
