@@ -22,7 +22,7 @@ void ShowArr (string[] arr)
 }
 
 string[] Arr = NewArr(SIZE);
-ShowArr(Arr);
+//ShowArr(Arr);
 
 string[] ResArr (string[] arr)
 {
